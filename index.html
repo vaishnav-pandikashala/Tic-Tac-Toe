@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neon Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+    </div>
+
+    <div class="game-container">
+
+        <h1>🎮 TIC TAC TOE</h1>
+
+        <p class="subtitle">
+            ⚡ USER VS COMPUTER ⚡
+        </p>
+
+        <div class="score-board">
+
+            <div class="score player-score">
+                <span>👤 YOU</span>
+                <strong id="playerScore">0</strong>
+            </div>
+
+            <div class="score draw-score">
+                <span>🤝 DRAW</span>
+                <strong id="drawScore">0</strong>
+            </div>
+
+            <div class="score computer-score">
+                <span>🤖 AI</span>
+                <strong id="computerScore">0</strong>
+            </div>
+
+        </div>
+
+        <div id="status">
+            🎮 Your Turn!
+        </div>
+
+        <div class="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+        <div class="buttons">
+
+            <button id="newGame">
+                🔄 New Game
+            </button>
+
+            <button id="musicButton">
+                🎵 Music OFF
+            </button>
+
+        </div>
+
+        <p class="footer">
+            You are <span class="x-text">X</span>
+            &nbsp; | &nbsp;
+            Computer is <span class="o-text">O</span>
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
